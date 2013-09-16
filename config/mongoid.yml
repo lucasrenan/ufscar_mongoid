@@ -1,0 +1,6 @@
+development:
+  sessions:
+    default:
+      database: ufscar_mongo
+      hosts:
+        - localhost:27017
