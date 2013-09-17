@@ -5,13 +5,26 @@ Dir["./models/*.rb"].each do |f|
   require f
 end
 
-book = Book.new(title: "vazio")
-# Book.create(title: "vazio")
-if book.save
-  puts "salvou o livro!"
-else
-  puts "erro: nao salvou o livro"
-end
+c = Category.create(title: "informatica")
+
+b = Book.new(title: "test")
+b.category = c
+b.save
+
+puts b.inspect
+
+
+
+
+
+
+# book = Book.new(title: "vazio")
+# # Book.create(title: "vazio")
+# if book.save
+#   puts "salvou o livro!"
+# else
+#   puts "erro: nao salvou o livro"
+# end
 
 
 

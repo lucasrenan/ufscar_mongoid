@@ -4,5 +4,7 @@ class Book
   field :title
   field :price, type: Float
 
+  belongs_to :category
+
   validates_presence_of :title
 end
