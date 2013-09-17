@@ -5,13 +5,29 @@ Dir["./models/*.rb"].each do |f|
   require f
 end
 
-c = Category.create(title: "informatica")
 
-b = Book.new(title: "test")
-b.category = c
-b.save
+# t1 = Tag.create(name: "computador")
+# t2 = Tag.create(name: "apple")
 
-puts b.inspect
+# product = Product.new(name: "macbook")
+# product.tags = [t1, t2]
+# product.save
+
+puts Product.count
+p = Product.last
+puts p.tags.inspect
+
+puts
+puts p.tags.map(&:name)
+
+
+# c = Category.create(title: "informatica")
+
+# b = Book.new(title: "test")
+# b.category = c
+# b.save
+
+# puts b.inspect
 
 
 
