@@ -5,14 +5,34 @@ Dir["./models/*.rb"].each do |f|
   require f
 end
 
-order = Order.new(date: Date.today)
-item1 = Item.new(name: "mac")
-item2 = Item.new(name: "mouse")
+post = Post.new
+post.title = {
+  en: "english",
+  pt_BR: "portugues",
+  es: "español"
+}
 
-order.items << item1
-order.items << item2
+puts post.save
 
-puts order.inspect
-puts order.items.inspect
+puts Post.last.title["en"]
 
-order.save
+
+
+
+
+
+
+
+
+
+# order = Order.new(date: Date.today)
+# item1 = Item.new(name: "mac")
+# item2 = Item.new(name: "mouse")
+
+# order.items << item1
+# order.items << item2
+
+# puts order.inspect
+# puts order.items.inspect
+
+# order.save
