@@ -1,0 +1,1 @@
+mongoimport -h localhost --port 27017 -d ufscar_mongo -c suppliers --type csv --file suppliers.csv --headerline

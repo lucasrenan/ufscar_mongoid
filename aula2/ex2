@@ -1,0 +1,22 @@
+1 - total de documentos da coleção fornecedor
+
+2 - todos os fornecedores das cidades que começam com a letra A
+
+3 - todos os fornecedores com _id menor ou igual a 10 e maior ou igual a 12
+
+4 - apenas o fornecedor com id 100
+
+5 - todos os fornecedores da nação JORDAN e região MIDDLE EAST
+
+6 - descobrir como funciona o comando explain
+
+7 - criar um índice composto para os campos s_nation e s_region
+
+8 - como indice impacta na consulta?
+
+9 - criar o campo updated_at e setar a data corrente para o fornecedor id: 100
+
+10 - rodar todos os updates da seção "update modifiers" da apostila marrom
+no documento com id: 100
+
+11 - remover todos os documentos onde o campo s_nation for igual a PERU

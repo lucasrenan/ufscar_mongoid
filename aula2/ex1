@@ -1,0 +1,7 @@
+importar csv suppliers.csv
+
+https://dl.dropboxusercontent.com/u/1299018/suppliers.csv
+
+http://support.mongohq.com/importing-exporting/from-csv.html
+
+mongoimport -h localhost --port 27017 -d ufscar_mongo -c suppliers --type csv --file ~/Desktop/football_players.csv --headerline
