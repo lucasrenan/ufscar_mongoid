@@ -1,3 +1,0 @@
-```bash
-  ruby run.rb
-```
